@@ -105,7 +105,8 @@ You must use the **refresh token** to fetch a **new access token** every 3 hours
 ### 🔄 Redirect Routes
 
 - `/up` → Redirects to `/uploads.html`
-- `/upload` → Opens upload UI for sending files to Dropbox
+- `/upload` → Opens upload UI for sending files to Dropbox.
+      For ex: `https://your-frontend-domain.com/upload`
 
 Upload endpoint (in `server.mjs`):
 
