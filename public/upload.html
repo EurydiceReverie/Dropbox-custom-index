@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KK's Drive</title>
+  <link rel="icon" type="image/png" href="/images/sennlogo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Aldrich&family=Gabarito:wght@400..900&family=Wittgenstein:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="/src/styles.css">
+  <script src="/src/scriptt.js" defer></script>
+  <script src="/src/index.js" defer></script>
+</head>
+<body>
+
+  <div class="header">
+    <div class="left-side">
+      <img src="/images/image2.png" alt="Drive Icon" class="header-image">
+      <span class="kk">KK'</span><span class="drive">s</span> <span class="drive">Drive</span>
+    </div>
+    <div class="right-side">     
+
+      <a href="https://github.com/EurydiceReverie" target="_blank">
+        <span class="icon"><i class="fab fa-github"></i></span> GitHub
+      </a>
+
+      <a href="mailto:me@ketharikarthik88@gmail.com">
+        <span class="icon"><i class="fas fa-envelope"></i></span> Email
+      </a>
+    </div>
+  </div>
+
+ <div id="loadingContainer">
+    <div class="animatedLine"></div>
+</div>
+
+  <div class="main">
+    <div class="upload-toggle">
+  <label class="switch">
+    <input type="checkbox" id="uploadModeToggle">
+    <span class="slider"></span>
+  </label>
+<span id="uploadModeLabel" style="font-family: 'Aldrich', sans-serif;">File Upload</span>
+</div>
+
+    <div class="upload-container">
+  <label for="fileUpload" class="upload-dropzone">
+    <input type="file" id="fileUpload" multiple hidden />
+    <div class="upload-icon"><i class="fas fa-cloud-upload-alt"></i></div>
+<p id="uploadPrompt" style="font-family: 'Gabarito', sans-serif;">Drag & drop files here or click to select</p>
+  </label>
+  <div id="uploadPreview"></div>
+  <button id="uploadBtn" disabled>Upload Files</button>
+  <div id="progressBarContainer">
+    <div id="progressBar">
+      <div id="progressBarFill"></div>
+    </div>
+    <div id="uploadStatus"></div>
+  </div>
+  <div id="uploadMessage" class="upload-toast hidden">Upload complete!</div>
+</div>
+
+  </div>
+
+  <div class="footer">
+    © Made by <span class="spaced-link"><a href="https://github.com/Ransomliome360" target="_blank">Ransomliome[s]</a></span> .
+  </div>
+</body>
+</html>
