@@ -191,7 +191,7 @@ uploadBtn.addEventListener('click', async () => {
       const formData = new FormData();
       formData.append('files', file, file.name);
 
-      const res = await fetch(`${BACKEND_URL}/api/upload?folderName=${encodeURIComponent(folderName)}`, {
+      const res = await fetch(`/api/upload?folderName=${encodeURIComponent(folderName)}`, {
         method: 'POST',
         body: formData,
       });
