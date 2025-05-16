@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KK's Drive</title>
+  <link rel="icon" type="image/png" href="/images/sennlogo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Aldrich&family=Gabarito:wght@400..900&family=Wittgenstein:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="/src/styles.css">
+  <script src="/src/10dd20e22er0dff3.js" defer></script>
+  <script src="/src/index.js" defer></script>
+</head>
+<body>
+<div class="header">
+    <div class="left-side">
+      <img src="/images/image2.png" alt="Drive Icon" class="header-image">
+      <span class="kk">KK'</span><span class="drive">s</span> <span class="drive">Drive</span>
+    </div>
+    <div class="right-side">
+      <div class="search-container" style="position: relative;">
+        <input type="search" id="searchInput" placeholder="Search..." />
+        <span class="search-icon"><i class="fas fa-search"></i></span>
+        <span class="shortcut-hint">
+            <kbd>Ctrl</kbd> + <kbd>K</kbd>
+          </span>          
+      </div>      
+
+      <a href="https://github.com/EurydiceReverie" target="_blank">
+        <span class="icon"><i class="fab fa-github"></i></span> GitHub
+      </a>
+
+      <a href="mailto:me@ketharikarthik88@gmail.com">
+        <span class="icon"><i class="fas fa-envelope"></i></span> Email
+      </a>
+    </div>
+  </div>
+
+ <div id="loadingContainer">
+    <div class="animatedLine"></div>
+</div>
+
+  <div class="main">
+    <div class="table-header">
+        <div class="left-section">
+            <i class="fas fa-home" onclick="window.location.href='/';"></i>
+            <span onclick="window.location.href='/';">Home</span>
+        </div>
+        <div class="right-section">
+<button class="view-toggle active" id="listView" title="List View">
+    <i class="fas fa-list"></i> List View
+  </button>
+  
+  <button class="view-toggle" id="gridView" title="Grid View">
+    <i class="fas fa-th-large"></i> Grid View
+  </button>
+  
+        </div>
+        <div id="fileTree" class="file-tree"></div>
+      </div>
+      
+  
+    <table class="file-table">
+      <thead>
+        <tr>
+          <th><input type="checkbox" id="select-all" style="cursor: pointer;"></th> 
+          <th>NAME</th>
+          <th>LAST MODIFIED</th>
+          <th>SIZE</th>
+           <th>
+  <div style="display: flex; align-items: center; justify-content: space-between;">
+    <span>ACTIONS</span>
+    <div class="action-header-buttons">
+      <i class="fas fa-download action-header-icon" id="bulk-download" title="Download Selected"></i>
+      <i class="fas fa-copy action-header-icon" id="bulk-copy" title="Copy Selected"></i>
+    </div>
+  </div>
+</th>
+        </tr>
+      </thead>
+          <tbody id="fileTableBody"></tbody>
+    </table>
+    <div class="grid-container" style="display: none;">
+    <div class="top-section">
+        <p>0 Item(s)</p>
+    </div>
+    <div class="separator"></div>
+    <div id="bulk-actions-container">
+        <div id="select-all-container">
+          <div class="grid-select-controls">
+    <input type="checkbox" id="select-all-grid" />
+    <span id="select-all-grid-count" style="display: none;"></span>
+    </div>
+</div>
+        <div style="margin-left: auto;" id="bulk-actions">
+    <button class="action-btn" id="header-download"><i class="fas fa-download"></i> Download</button>
+    <button class="action-btn" id="header-copy"><i class="fas fa-copy"></i> Copy</button>
+</div>
+
+    </div>
+    <div class="file-grid"></div>
+</div>
+
+  </div>
+
+  <div id="toast-container">
+  <div class="toast" id="zip-toast" style="display: none;">
+    <div class="dot-gathering"></div>
+    <span>Zipping files...</span>
+  </div>
+</div>
+
+  <div class="footer">
+    © Made by <span class="spaced-link"><a href="https://github.com/Ransomliome360" target="_blank">Ransomliome[s]</a></span> .
+  </div>
+</body>
+</html>
